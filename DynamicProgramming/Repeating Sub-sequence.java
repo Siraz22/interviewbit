@@ -2,6 +2,12 @@ import java.util.*;
 
 class Solution {
 
+    // "You can cry
+    // Drinking your eyes
+    // Do you miss the sadness when it's gone?
+    // And you let the river run wild"
+    // - Aurora, The River
+
     int modifiedLCS(String A) {
         int[][] dp = new int[A.length() + 1][A.length() + 1];
         for (int i = 0; i < A.length(); ++i) {
@@ -44,7 +50,7 @@ class Main {
         for (int i = 0; i < arr.length; ++i) {
             arrList.add(Integer.parseInt(arr[i]));
         }
-        Object answer = solution.functionName("abab");
-        System.out.println("hello " + answer.toString());
+        Object answer = solution.anytwo("abab");
+        System.out.println(answer.toString());
     }
 }

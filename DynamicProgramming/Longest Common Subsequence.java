@@ -1,6 +1,11 @@
 import java.util.*;
 
 class Solution {
+
+    // "Do you remember
+    // The 21st night of September?"
+    // - Earth, Wind & Fire
+
     public int solve(String A, String B) {
 
         int[][] dp = new int[A.length() + 1][B.length() + 1];

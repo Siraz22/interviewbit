@@ -2,6 +2,11 @@ import java.util.*;
 
 class Solution {
 
+    // "And if there is a God, would we even know his name?
+    // And if there is a God, I think he would shake his head
+    // And turn away"
+    // - Aurora, Infections of a Different Kind
+
     public int recursion(String A, String B, int n, int m, int[][] dp) {
 
         // Base condition 1
