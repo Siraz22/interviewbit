@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
 
     // "You can cry
     // Drinking your eyes

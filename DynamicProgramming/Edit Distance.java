@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
 
     // "And if there is a God, would we even know his name?
     // And if there is a God, I think he would shake his head

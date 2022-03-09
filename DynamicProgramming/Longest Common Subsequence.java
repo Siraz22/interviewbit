@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
 
     // "Do you remember
     // The 21st night of September?"

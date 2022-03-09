@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
 
     // "He holds the gun against my head
     // I close my eyes and bang I am dead"

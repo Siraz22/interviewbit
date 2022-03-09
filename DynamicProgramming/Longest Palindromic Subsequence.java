@@ -1,6 +1,11 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
+
+    // "Now, I understand what you tried to say to me
+    // And how you suffered for your sanity
+    // And how you tried to set them free"
+    // - Don Mclean, Vincent, Starry Night
 
     public int LCS(String A, String B) {
         int[][] dp = new int[A.length() + 1][B.length() + 1];

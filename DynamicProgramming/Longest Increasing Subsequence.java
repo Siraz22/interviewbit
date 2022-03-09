@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+public class Solution {
 
     // "I used to rule the world
     // Seas would rise when I gave the word
