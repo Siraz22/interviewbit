@@ -14,6 +14,10 @@
 
 public class Solution {
 
+    // "Our country made a promise, but you cannot trust a liar
+    // So grab a book, and step into the choir"
+    // - Oh John, Far Cry 5
+
     public void recursion(ArrayList<Integer> sum, ArrayList<Integer> currValue, TreeNode iter) {
         // base condition 1
         if (iter.left == null && iter.right == null) {
