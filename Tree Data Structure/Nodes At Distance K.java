@@ -11,7 +11,12 @@
  * }
  * }
  */
+
 public class Solution {
+
+    // "We are not alive
+    // We are surviving every time"
+    // - AURORA, Home
 
     public void solve(ArrayList<Integer> answer,
             HashMap<Integer, TreeNode> childToParent, HashMap<Integer, Integer> visited,
