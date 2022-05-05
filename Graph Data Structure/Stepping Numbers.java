@@ -2,6 +2,11 @@ import java.util.*;
 
 public class Solution {
 
+    // "Though I know that evening's empire has returned into sand
+    // Vanished from my hand
+    // Left me blindly here to stand, but still not sleeping"
+    // - Bob Dylan, Mr Tambourine Man
+
     public void construct(int rootNum, ArrayList<Integer> answer, int A, int B) {
         if (rootNum >= A && rootNum <= B) {
             answer.add(rootNum);
