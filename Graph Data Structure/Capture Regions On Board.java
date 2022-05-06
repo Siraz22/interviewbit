@@ -122,7 +122,7 @@ class Main {
 
         solution.solve(matrix);
 
-        System.out.println("Error");
+        System.out.println("After");
         // System.out.println(matrix.toString());
         for (int i = 0; i < matrix.size(); ++i) {
             System.out.println(matrix.get(i).toString());
