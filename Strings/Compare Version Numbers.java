@@ -8,7 +8,6 @@ public class Solution {
             Double num = Double.parseDouble(aux[i]);
             version1.add(num);
         }
-
         aux = B.split("\\.");
         for (int i = 0; i < aux.length; ++i) {
             Double num = Double.parseDouble(aux[i]);

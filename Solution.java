@@ -1,5 +1,7 @@
 import java.util.*;
 
+import Strings.Solution;
+
 public class Solution {
     public int firstMissingPositive(ArrayList<Integer> A) {
 
