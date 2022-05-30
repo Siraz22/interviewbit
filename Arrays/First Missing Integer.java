@@ -2,45 +2,29 @@ public class Solution {
     public int firstMissingPositive(ArrayList<Integer> A) {
 
         for (int i = 0; i < A.size(); ++i) {
+            int num = A.get(i);
+            int expectedIndex = num - 1;
 
-            int number = A.get(i);
-            int expectedIndex = number - 1;
+            // out of bounds for our algorithm
+            if (A.get(i) <= 0 || A.get(i) > A.size())
+                continue;
 
-            // System.out.println(i);
-            while (A.get(i) <= A.size() && A.get(i) > 0 && A.get(expectedIndex) != number) {
-
-                // System.out.println(i+"=>"+A.toString());
-                int swapIndex = number - 1;
-
-                // check if the index to be swapped with already has a correct element, ie, to
-                // handle
-                // duplicate values in the ArrayList
-                if (A.get(swapIndex) == number) {
-                    break;
-                } else {
-                    // swap
-                    int temp = A.get(swapIndex);
-                    A.set(swapIndex, number);
-                    A.set(i, temp);
+            if (A.get(expectedIndex) == num) {
+                continue; // case of duplicate, hence leave
+            } else {
+                while (A.get(i) > 0 && A.get(i) <= A.size() && A.get(i) != (int) A.get(A.get(i) - 1)) {
+                    // keep swapping
+                    int num1 = A.get(i), num2 = A.get(A.get(i) - 1);
+                    A.set(i, num2);
+                    A.set(num1 - 1, num1);
                 }
-
-                // IMPORTANT : since number & expectedIndex depends on i, update it
-                // as anything inside while loop would be using old value of number,
-                // but after swap, the number at the same ith place changes
-                number = A.get(i);
-                expectedIndex = number - 1;
-
             }
         }
 
-        // System.out.println(A.toString());
-
         for (int i = 0; i < A.size(); ++i) {
-            if (i + 1 != A.get(i))
+            if (A.get(i) != i + 1)
                 return i + 1;
         }
-
-        // iterated the whole array, didn't find any wrong index
         return A.size() + 1;
     }
 }
